@@ -6,8 +6,8 @@ import { AuthorController } from './author.controller';
 import { Author } from './author.model';
 
 @Module({
-  imports: [ConfigModule, TypegooseModule.forFeature([Author])],
-  providers: [AuthorService],
-  controllers: [AuthorController],
+	imports: [ ConfigModule, TypegooseModule.forFeature([ Author ]) ],
+	providers: [ AuthorService ],
+	controllers: [ AuthorController ]
 })
 export class AuthorModule {}
